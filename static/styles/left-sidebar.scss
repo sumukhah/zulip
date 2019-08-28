@@ -39,8 +39,10 @@ $topic_indent: calc($far_left_gutter_size + $left_col_size + 4px);
     font-size: 14px;
 }
 
-li.show-more-topics a {
-    font-size: 12px;
+li.show-more-topics {
+    a {
+        font-size: 12px;
+    }
 }
 
 #left-sidebar #user-list,
@@ -242,6 +244,11 @@ li.top_left_starred_messages {
     font-weight: normal;
     letter-spacing: 0.6px;
     border-radius: 4px;
+}
+
+.show-more-topics .topic-unread-count {
+    /* TODO: Fix the vertical alignment here */
+    margin-right: 30px;
 }
 
 /* Starred messaged counts aren't really unread
@@ -469,6 +476,7 @@ li.expanded_private_message a {
 }
 
 .zero-pm-unreads .pm-box,
+.zero-topic-unreads .more-topics-box,
 .zero-topic-unreads .topic-box {
     margin-right: 15px;
 }
